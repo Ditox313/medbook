@@ -5,6 +5,99 @@
   width: 100%;
 }
 /*------------------------------------------------------------------------*/
-h1 {
-  color: #0082E5;
+ul li {
+  list-style-type: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  padding-top: 20px;
+}
+header .header_menu {
+  font-family: 'PT Sans', sans-serif;
+}
+header .header_menu .header_menu_item ul > li {
+  float: left;
+}
+header .header_menu .header_menu_item ul > li > a {
+  display: block;
+  font-size: 18px;
+  padding: 0px 12px 0px 12px;
+  color: #000;
+  box-sizing: content-box;
+  position: relative;
+  transition: all 0.5s;
+}
+header .header_menu .header_menu_item ul > li > a:hover {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+header .header_menu .header_menu_item ul > li > a:hover::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background: #0082E5;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+header .header_menu .header_menu_item .header_info {
+  font-size: 18px;
+}
+header .header_menu .header_menu_item .header_phone p {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+header .header_menu .header_menu_item .header_phone i {
+  font-size: 20px;
+}
+header .header_menu .header_menu_item .header_phone .header_phone_tel {
+  font-size: 18px;
+  color: #000;
+}
+header .header_menu .header_menu_item .header_phone .header_phone_tel:hover {
+  text-decoration: none;
+}
+header .header_menu .header_menu_item .header_phone .header_but_modal {
+  font-size: 16px;
+  padding: 5px 20px;
+  background: #0082E5;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: all 0.3s;
+  display: inline-block;
+  margin-top: 5px;
+}
+header .header_menu .header_menu_item .header_phone .header_but_modal:hover {
+  text-decoration: none;
+  background: #0065b2;
+  transition: all 0.3s;
+}
+header .header_menu .header_info_item .header_info_item_time_work span {
+  width: 100%;
+  display: block;
+}
+header .col-lg-6,
+header .col-lg-4,
+header .col-lg-2 {
+  padding: 0;
+}
+@media screen and (max-width: 1200px) {
+  .header_phone_tel {
+    font-size: 17px !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header_phone_tel {
+    font-size: 18px !important;
+  }
 }

@@ -1,7 +1,188 @@
 @import 'vars.less';
 
+ul li
+{
+	list-style-type: none;
+}
+
+ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
 
 
-h1{
-	color: @blue;
+body
+{
+	font-family: @content;
+}
+
+
+
+
+// ---------------------------------------------------------------------------------------------------//
+
+
+
+//header
+
+header
+{
+	padding-top: 20px;
+
+	.header_menu
+	{
+		// border: 1px solid #000;
+		font-family: @decor;
+
+		.header_menu_item
+		{
+			// border: 1px solid red;
+
+			ul > li
+			{
+				float: left;
+			}
+
+			ul > li > a
+			{
+				display: block;
+				font-size: 18px;
+				padding: 0px 12px 0px 12px;
+				color: @dark;
+				box-sizing: content-box;
+				position: relative;
+				transition: all 0.5s;
+
+				&:hover
+				{
+					text-decoration: none;
+					transition: all 0.5s;
+
+					&::after
+						{
+							content: '';
+							display: inline-block;
+							width: 100%;
+							height: 3px;
+							background: @blue;
+							position: absolute;
+							bottom: -10px;
+							left: 0;
+						}
+				}
+
+				
+
+			}
+
+
+			.header_info
+			{
+				font-size: 18px;
+			}
+
+			.header_phone
+			{
+				p
+				{
+					padding: 0;
+					margin: 0;
+
+					text-align: left;
+				}
+
+				i
+				{
+					font-size: 20px;
+				}
+
+
+				.header_phone_tel
+				{
+					font-size: 18px;
+					color: @dark;
+
+					&:hover
+					{
+						text-decoration: none;
+					}
+				}
+
+
+				.header_but_modal
+				{
+					font-size: 16px;
+					padding: 5px 20px;
+					background: @blue;
+					color: #fff;
+					border-radius: 5px;
+					font-weight: 700;
+					transition: all 0.3s;
+					display: inline-block;
+					margin-top: 5px;
+
+					&:hover
+					{
+						text-decoration: none;
+						background: darken(@blue, 10%);
+						transition: all 0.3s;
+					}
+
+				
+				}
+			}
+		}
+
+
+		.header_info_item
+		{
+
+			.header_info_item_time_work span
+			{
+				width: 100%;
+				display: block;
+			}
+
+			
+		}
+
+		
+	}
+
+	& .col-lg-6, .col-lg-4, .col-lg-2
+	{
+		padding: 0;
+	}
+}
+
+
+// end header
+
+
+
+
+
+
+//Media
+
+@media screen and (max-width: 1200px)
+{
+	.header_phone_tel
+	{
+		font-size: 17px !important;
+	}
+}
+
+@media screen and (max-width: 992px)
+{
+	.header_phone_tel
+	{
+		font-size: 18px !important;
+	}
+
+	
+
+	
 }
