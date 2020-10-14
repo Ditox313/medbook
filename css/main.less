@@ -1,22 +1,21 @@
 @import 'vars.less';
 
-ul li
-{
+ul li {
 	list-style-type: none;
 }
 
-ul
-{
+ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 }
 
 
-body
-{
+body {
 	font-family: @content;
 }
+
+
 
 
 
@@ -27,26 +26,19 @@ body
 
 //header
 
-header
-{
+header {
 	padding-top: 20px;
 
-	.header_menu
-	{
-		// border: 1px solid #000;
+	.header_menu {
 		font-family: @decor;
 
-		.header_menu_item
-		{
-			// border: 1px solid red;
+		.header_menu_item {
 
-			ul > li
-			{
+			ul>li {
 				float: left;
 			}
 
-			ul > li > a
-			{
+			ul>li>a {
 				display: block;
 				font-size: 18px;
 				padding: 0px 12px 0px 12px;
@@ -55,64 +47,55 @@ header
 				position: relative;
 				transition: all 0.5s;
 
-				&:hover
-				{
+				&:hover {
 					text-decoration: none;
 					transition: all 0.5s;
 
-					&::after
-						{
-							content: '';
-							display: inline-block;
-							width: 100%;
-							height: 3px;
-							background: @blue;
-							position: absolute;
-							bottom: -10px;
-							left: 0;
-						}
+					&::after {
+						content: '';
+						display: inline-block;
+						width: 100%;
+						height: 3px;
+						background: @blue;
+						position: absolute;
+						bottom: -10px;
+						left: 0;
+					}
 				}
 
-				
+
 
 			}
 
 
-			.header_info
-			{
+			.header_info {
 				font-size: 18px;
 			}
 
-			.header_phone
-			{
-				p
-				{
+			.header_phone {
+				p {
 					padding: 0;
 					margin: 0;
 
 					text-align: left;
 				}
 
-				i
-				{
+				i {
 					font-size: 20px;
 				}
 
 
-				.header_phone_tel
-				{
+				.header_phone_tel {
 					font-size: 18px;
 					color: @dark;
 
-					&:hover
-					{
+					&:hover {
 						text-decoration: none;
 					}
 				}
 
 
-				.header_but_modal
-				{
+				.header_but_modal {
 					font-size: 16px;
 					padding: 5px 20px;
 					background: @blue;
@@ -123,37 +106,151 @@ header
 					display: inline-block;
 					margin-top: 5px;
 
-					&:hover
-					{
+					&:hover {
 						text-decoration: none;
 						background: darken(@blue, 10%);
 						transition: all 0.3s;
 					}
 
-				
+
 				}
 			}
 		}
 
 
-		.header_info_item
-		{
+		.header_info_item {
 
-			.header_info_item_time_work span
-			{
+			.header_info_item_time_work span {
 				width: 100%;
 				display: block;
 			}
 
-			
+
 		}
 
-		
+
 	}
 
-	& .col-lg-6, .col-lg-4, .col-lg-2
-	{
+	& .col-lg-6,
+	.col-lg-7,
+	.col-lg-5,
+	.col-lg-4,
+	.col-lg-2 {
 		padding: 0;
+	}
+
+	.header_content
+	{
+		.header_content_item_img
+		{
+			margin-top: 30px;
+		}
+	}
+
+	.header_content_item
+	{
+		h1
+		{
+			font-size: 45px;
+			font-weight: 700;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		
+		h2
+		{
+			text-transform: uppercase;
+			margin-bottom: 20px;
+
+			p
+			{
+				margin: 0;
+
+				span
+				{
+					color: @blue;
+				}
+			}
+
+			.h2_title
+			{
+				color: #0082E5;
+				font-family: "Roboto", Sans-serif;
+				font-size: 34px;
+				font-weight: 700;
+			}
+		}
+
+
+		
+
+
+		.header_form
+		{
+			border: 1px solid #B6B7B7;
+			border-radius: 10px;
+			width: 80%;
+			padding: 20px 40px;
+			display: inline-block;
+
+			fieldset
+			{
+				display: block;
+
+				input
+				{
+					width: 100%;
+					padding: 12px;
+					border-radius: 10px;
+					outline: none;
+					border: 1px solid #B6B7B7;
+					font-weight: 300;
+					margin-bottom: 10px;
+				}
+
+				button
+				{
+					width: 100%;
+					padding: 12px 24px;
+					background: @blue;
+					color: #fff;
+					border: none;
+					outline: none;
+					border-radius: 10px;
+					cursor: pointer;
+					transition: all 0.5s;
+
+					&:hover
+					{
+						background: darken(@blue, 10%);
+						transition: all 0.5s;
+					}
+				}
+			}
+
+			h3
+			{
+				text-align: center;
+				font-size: 30px;
+
+				span
+				{
+					color: @blue;
+				}
+			}
+
+
+			h4
+			{
+				text-align: center;
+				font-size: 26px;
+
+				span
+				{
+					color: @blue;
+				}
+			}
+		}
 	}
 }
 
@@ -167,22 +264,150 @@ header
 
 //Media
 
-@media screen and (max-width: 1200px)
-{
-	.header_phone_tel
-	{
+@media screen and (max-width: 1200px) {
+	.header_phone_tel {
 		font-size: 17px !important;
+	}
+
+	.header .header_content_item h1
+	{
+		font-size: 40px;
+	}
+
+	header .header_content_item .header_form h3
+	{
+		font-size: 27px;
+	}
+
+	header .header_content_item .header_form h4
+	{
+		font-size: 22px;
 	}
 }
 
-@media screen and (max-width: 992px)
-{
-	.header_phone_tel
-	{
+@media screen and (max-width: 992px) {
+	.header_phone_tel {
 		font-size: 18px !important;
 	}
 
+	header .header_menu .header_menu_item ul
+	{
+		text-align: center;
+	}
+
+	header .header_menu .header_menu_item ul > li
+	{
+		float: none;
+		display: inline-block;
+	}
+
+	header .header_menu .header_menu_item .header_phone p
+	{
+		text-align: right;
+	}
+
+
+	header .header_content_item .header_form h3
+	{
+		font-size: 30px;
+	}
+
+	header .header_content_item .header_form h4
+	{
+		font-size: 26px;
+	}
+
+	header .header_content_item .header_form
+	{
+		width: 100%;
+	}
+
+}
+
+
+
+@media screen and (max-width: 576px) {
+	header .header_menu .header_info_item .header_info_item_time_work span
+	{
+		text-align: center;
+		margin: 20px 0;
+	}
+
+	header .header_menu .header_menu_item .header_phone p
+	{
+		text-align: center;
+	}
+
+	header .header_menu .header_menu_item ul > li > a
+	{
+		font-weight: 700;
+	}
+
+	header
+	{
+		padding: 0px 15px;
+	}
+
+	.header .header_content_item h1
+	{
+		font-size: 27px;
+	}
+	
+	header .header_content_item h2 .h2_title
+	{
+		font-size: 27px;
+	}
+
+	header .header_content_item h2 .h2_text
+	{
+		font-size: 24px;
+	}
+
+	header .header_content_item .header_form
+	{
+		padding: 20px;
+	}
+
+
+	header .header_content_item .header_form h3
+	{
+		font-size: 24px;
+	}
+
+	header .header_content_item .header_form h4
+	{
+		font-size: 20px;
+	}
 	
 
-	
 }
+
+
+@media screen and (max-width: 400px)
+{
+	.header .header_content_item h1
+	{
+		font-size: 21px;
+	}
+
+	header .header_content_item h2 .h2_title
+	{
+		font-size: 22px;
+	}
+
+	header .header_content_item h2 .h2_text
+	{
+		font-size: 15px;
+	}
+
+	header .header_content_item .header_form h3
+	{
+		font-size: 18px;
+	}
+
+	header .header_content_item .header_form h4
+	{
+		font-size: 15px;
+	}
+}
+
