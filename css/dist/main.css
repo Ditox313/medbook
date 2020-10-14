@@ -191,6 +191,49 @@ header .header_content_item .header_form h4 span {
   width: 430px;
   height: 300px;
 }
+.advantages {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+.advantages .row {
+  margin-top: 30px;
+}
+.advantages h2 {
+  text-align: center;
+  font-size: 56px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.advantages .advantages_min_col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.advantages .advantages_min_col .advantages_min_col_item {
+  text-align: center;
+  min-height: 185px;
+}
+.advantages .advantages_min_col .advantages_min_col_item img {
+  margin-bottom: 10px;
+}
+.advantages .advantages_min_col .advantages_min_col_item p {
+  font-weight: 300;
+}
+.advantages .advantages_min_col .advantages_min_col_item h5 {
+  font-size: 25px;
+}
+.advantages .advantages_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: right;
+}
+.advantages .advantages_img img {
+  margin-left: 35px;
+}
 @media screen and (max-width: 1200px) {
   .header_phone_tel {
     font-size: 17px !important;
@@ -246,6 +289,20 @@ header .header_content_item .header_form h4 span {
     background-color: rgba(217, 240, 252, 0.56);
     padding: 100px 0 100px 0;
   }
+  .advantages .advantages_img img {
+    margin-bottom: 50px;
+  }
+  .advantages .advantages_img img {
+    margin-left: 0;
+  }
+  .advantages {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .advantages h2 {
+    font-size: 50px;
+  }
 }
 @media screen and (max-width: 576px) {
   header .header_menu .header_info_item .header_info_item_time_work span {
@@ -299,6 +356,9 @@ header .header_content_item .header_form h4 span {
   .reesrt .reestr_line {
     left: 0;
   }
+  .advantages h2 {
+    font-size: 37px;
+  }
 }
 @media screen and (max-width: 400px) {
   .header .header_content_item h1 {
@@ -321,5 +381,8 @@ header .header_content_item .header_form h4 span {
   }
   .reesrt .reesrt_item p {
     font-size: 16px;
+  }
+  .advantages h2 {
+    font-size: 29px;
   }
 }
