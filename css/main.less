@@ -467,8 +467,7 @@ header {
 		margin-top: 60px;
 
 
-		.block_mod
-		{
+		.block_mod {
 			margin-top: 100px;
 		}
 
@@ -476,10 +475,10 @@ header {
 		.why_works_content_item {
 			display: flex;
 			flex-direction: column;
-			
 
-		
-			
+
+
+
 			.why_works_content_item_block {
 				position: relative;
 				display: flex;
@@ -491,8 +490,7 @@ header {
 				width: 95%;
 				min-height: 180px;
 
-				.why_num
-				{
+				.why_num {
 					position: absolute;
 					bottom: -10px;
 					left: -10px;
@@ -503,26 +501,22 @@ header {
 					width: 40%;
 					border-radius: 5px;
 
-					
+
 				}
 
-				.why_img_mod_1
-				{
+				.why_img_mod_1 {
 					background: url(../../img/why1.jpg) no-repeat center center / cover;
 				}
 
-				.why_img_mod_2
-				{
+				.why_img_mod_2 {
 					background: url(../../img/why2.jpg) no-repeat center center / cover;
 				}
 
-				.why_img_mod_3
-				{
+				.why_img_mod_3 {
 					background: url(../../img/why3.jpg) no-repeat center center / cover;
 				}
 
-				.why_img_mod_4
-				{
+				.why_img_mod_4 {
 					background: url(../../img/why4.jpg) no-repeat center center / cover;
 				}
 
@@ -555,18 +549,17 @@ header {
 
 // quest
 
-.quest
-{
+.quest {
 	background-color: #EAF7FD;
 	padding: 100px 0;
+
 	h2 {
 		font-size: 56px;
 		text-align: center;
 	}
 
 
-	.quest_content
-	{
+	.quest_content {
 		min-height: 500px;
 		background-color: #fff;
 		margin-top: 30px;
@@ -576,36 +569,30 @@ header {
 		box-shadow: -1px -1px 16px -4px rgba(0, 0, 0, 0.75);
 
 
-		.questsion_block
-		{
+		.questsion_block {
 			padding: 30px;
 			border-bottom: 1px solid #B6B7B7;
 			position: relative;
 
-			.togle
-			{
+			.togle {
 				display: none;
 			}
-			
 
-			.questsion_block_answer
-			{
+
+			.questsion_block_answer {
 				font-weight: 300;
 				margin-top: 30px;
 			}
 
-			.questsion_block_answer
-			{
+			.questsion_block_answer {
 				display: none;
 			}
 
-			p
-			{
+			p {
 				margin: 0;
 			}
 
-			span
-			{
+			span {
 				display: inline-block;
 				margin-left: auto;
 				position: absolute;
@@ -614,14 +601,145 @@ header {
 				cursor: pointer;
 			}
 
-			.questsion_block_title
-			{
+			.questsion_block_title {
 				cursor: pointer;
 			}
 		}
 	}
 }
+
 // end quest
+
+
+
+
+
+
+
+
+// paralax_form_2
+
+.paralax_form_2 {
+	height: 100vh;
+	background: url('../../img/paralax_form_2.jpg') no-repeat fixed center / cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+
+	.paralax_form_2_overlay {
+		min-height: 613px;
+		background-color: rgba(0, 0, 0, 0.7);
+		border-radius: 10px;
+		padding: 30px 40px 60px 40px;
+
+
+		h2 {
+			font-size: 56px;
+			text-align: center;
+			color: #fff;
+			margin-bottom: 20px;
+		}
+
+
+
+
+		.paralax_form_2_black_item_img img {
+			border-radius: 10px;
+		}
+	}
+
+
+
+	.paralax_form_2_black_item {
+
+		.paralax_form_2_black_item_text {
+			padding-left: 20px;
+
+			p {
+				margin: 0;
+				font-size: 34px;
+				color: #fff;
+
+				span {
+					font-size: 86px;
+					color: @blue;
+					margin-top: -20px;
+					display: inline-block;
+				}
+
+			}
+
+
+			button {
+				width: 50%;
+				padding: 20px 40px 20px 40px;
+				background: @blue;
+				color: #fff;
+				border: none;
+				outline: none;
+				border-radius: 10px;
+				cursor: pointer;
+				transition: all 0.5s;
+				text-transform: uppercase;
+				font-size: 18px;
+
+				&:hover {
+					background: darken(@blue, 10%);
+					transition: all 0.5s;
+				}
+			}
+		}
+
+
+		h3 {
+			font-size: 30px;
+			color: #fff;
+
+			span {
+				color: @blue;
+			}
+		}
+	}
+}
+
+// end paralax_form_2
+
+
+
+
+
+
+// footer
+
+footer
+{
+	background-color: @dark;
+	padding: 10px 0;
+	.footer_text
+	{
+		text-align: center;
+		color: #fff;
+	}
+}
+// end footer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -656,6 +774,15 @@ header {
 
 	.paralax_form_1 .paralax_form_1_wrap h3 {
 		font-size: 34px;
+	}
+
+
+	.paralax_form_2 .paralax_form_2_black_item h3 {
+		font-size: 27px;
+	}
+
+	.paralax_form_2 .paralax_form_2_black_item .paralax_form_2_black_item_text button {
+		width: auto;
 	}
 }
 
@@ -745,8 +872,7 @@ header {
 		width: 32%;
 	}
 
-	.why_works .why_works_content .block_mod
-	{
+	.why_works .why_works_content .block_mod {
 		margin-top: 0;
 	}
 
@@ -755,9 +881,30 @@ header {
 	}
 
 
-	.why_works .why_works_content .why_works_content_item .why_works_content_item_block
-	{
+	.why_works .why_works_content .why_works_content_item .why_works_content_item_block {
 		width: 100%;
+	}
+
+	.paralax_form_2 {
+		height: auto;
+	}
+
+	.paralax_form_2 .paralax_form_2_black_item h3 {
+		font-size: 45px;
+	}
+
+	.paralax_form_2 .paralax_form_2_black_item .paralax_form_2_black_item_text button {
+		width: 100%;
+	}
+
+	.paralax_form_2_black_item_img {
+		margin-bottom: 30px;
+	}
+
+
+	.paralax_form_2 .paralax_form_2_black_item .paralax_form_2_black_item_text
+	{
+		padding-left: 0;
 	}
 
 
@@ -793,6 +940,16 @@ header {
 	.paralax_form_1 .paralax_form_1_wrap .paralax_form1 fieldset button {
 		width: 100%;
 	}
+
+	.paralax_form_2 .paralax_form_2_black_item h3 {
+		font-size: 36px;
+	}
+
+
+	// .paralax_form_2 .paralax_form_2_overlay
+	// {
+	// 	padding: 30px 10px 60px 10px ;
+	// }
 
 
 }
@@ -873,34 +1030,28 @@ header {
 		font-size: 37px;
 	}
 
-	.why_works_content_item
-	{
+	.why_works_content_item {
 		padding: 20px;
 	}
 
 
-	.why_works .why_works_content .why_works_content_item .why_works_content_item_block .why_works_content_item_block_img
-	{
+	.why_works .why_works_content .why_works_content_item .why_works_content_item_block .why_works_content_item_block_img {
 		width: 100%;
 	}
 
-	.why_works .why_works_content .why_works_content_item .why_works_content_item_block .why_works_content_item_block_text
-	{
+	.why_works .why_works_content .why_works_content_item .why_works_content_item_block .why_works_content_item_block_text {
 		width: 100%;
 	}
 
-	.why_works_content_item_block
-	{
+	.why_works_content_item_block {
 		flex-direction: column;
 	}
 
-	.why_works h2
-	{
+	.why_works h2 {
 		font-size: 35px;
 	}
 
-	.why_works .title_p
-	{
+	.why_works .title_p {
 		font-size: 16px;
 	}
 
@@ -908,7 +1059,20 @@ header {
 		font-size: 46px;
 	}
 
+	.paralax_form_2 .paralax_form_2_overlay h2 {
+		font-size: 36px;
+	}
 
+	.paralax_form_2 .paralax_form_2_black_item h3 {
+		font-size: 26px;
+	}
+
+	// .paralax_form_2 .paralax_form_2_overlay {
+	// 	min-height: 613px;
+	// 	background-color: rgba(0, 0, 0, 0.7);
+	// 	border-radius: 10px;
+	// 	padding: 30px 20px 60px 2s0px;
+	// }
 
 }
 
@@ -956,13 +1120,11 @@ header {
 		font-size: 16px;
 	}
 
-	.why_works h2
-	{
+	.why_works h2 {
 		font-size: 27px;
 	}
 
-	.why_works .title_p
-	{
+	.why_works .title_p {
 		font-size: 15px;
 	}
 
@@ -970,12 +1132,33 @@ header {
 		font-size: 35px;
 	}
 
-	
+	.paralax_form_2 .paralax_form_2_overlay h2
+	{
+		font-size: 25px;
+	}
+
+	.paralax_form_2 .paralax_form_2_black_item h3
+	{
+		font-size: 20px;
+	}
+
+	.paralax_form_2 .paralax_form_2_black_item .paralax_form_2_black_item_text p span
+	{
+		font-size: 75px;
+	}
+
+	.paralax_form_2 .paralax_form_2_black_item .paralax_form_2_black_item_text button
+	{
+		padding: 20px;
+	}
+
+	.footer_text
+	{
+		font-size: 12px;
+	}
+
+
 }
 
 
 // end media
-
-
-
-

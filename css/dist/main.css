@@ -402,6 +402,75 @@ header .header_content_item .header_form h4 span {
 .quest .quest_content .questsion_block .questsion_block_title {
   cursor: pointer;
 }
+.paralax_form_2 {
+  height: 100vh;
+  background: url('../../img/paralax_form_2.jpg') no-repeat fixed center / cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.paralax_form_2 .paralax_form_2_overlay {
+  min-height: 613px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 30px 40px 60px 40px;
+}
+.paralax_form_2 .paralax_form_2_overlay h2 {
+  font-size: 56px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.paralax_form_2 .paralax_form_2_overlay .paralax_form_2_black_item_img img {
+  border-radius: 10px;
+}
+.paralax_form_2 .paralax_form_2_black_item .paralax_form_2_black_item_text {
+  padding-left: 20px;
+}
+.paralax_form_2 .paralax_form_2_black_item .paralax_form_2_black_item_text p {
+  margin: 0;
+  font-size: 34px;
+  color: #fff;
+}
+.paralax_form_2 .paralax_form_2_black_item .paralax_form_2_black_item_text p span {
+  font-size: 86px;
+  color: #0082E5;
+  margin-top: -20px;
+  display: inline-block;
+}
+.paralax_form_2 .paralax_form_2_black_item .paralax_form_2_black_item_text button {
+  width: 50%;
+  padding: 20px 40px 20px 40px;
+  background: #0082E5;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.paralax_form_2 .paralax_form_2_black_item .paralax_form_2_black_item_text button:hover {
+  background: #0065b2;
+  transition: all 0.5s;
+}
+.paralax_form_2 .paralax_form_2_black_item h3 {
+  font-size: 30px;
+  color: #fff;
+}
+.paralax_form_2 .paralax_form_2_black_item h3 span {
+  color: #0082E5;
+}
+footer {
+  background-color: #000;
+  padding: 10px 0;
+}
+footer .footer_text {
+  text-align: center;
+  color: #fff;
+}
 @media screen and (max-width: 1200px) {
   .header_phone_tel {
     font-size: 17px !important;
@@ -420,6 +489,12 @@ header .header_content_item .header_form h4 span {
   }
   .paralax_form_1 .paralax_form_1_wrap h3 {
     font-size: 34px;
+  }
+  .paralax_form_2 .paralax_form_2_black_item h3 {
+    font-size: 27px;
+  }
+  .paralax_form_2 .paralax_form_2_black_item .paralax_form_2_black_item_text button {
+    width: auto;
   }
 }
 @media screen and (max-width: 992px) {
@@ -490,6 +565,21 @@ header .header_content_item .header_form h4 span {
   .why_works .why_works_content .why_works_content_item .why_works_content_item_block {
     width: 100%;
   }
+  .paralax_form_2 {
+    height: auto;
+  }
+  .paralax_form_2 .paralax_form_2_black_item h3 {
+    font-size: 45px;
+  }
+  .paralax_form_2 .paralax_form_2_black_item .paralax_form_2_black_item_text button {
+    width: 100%;
+  }
+  .paralax_form_2_black_item_img {
+    margin-bottom: 30px;
+  }
+  .paralax_form_2 .paralax_form_2_black_item .paralax_form_2_black_item_text {
+    padding-left: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .advantages h2 {
@@ -513,6 +603,9 @@ header .header_content_item .header_form h4 span {
   }
   .paralax_form_1 .paralax_form_1_wrap .paralax_form1 fieldset button {
     width: 100%;
+  }
+  .paralax_form_2 .paralax_form_2_black_item h3 {
+    font-size: 36px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -591,6 +684,12 @@ header .header_content_item .header_form h4 span {
   .quest h2 {
     font-size: 46px;
   }
+  .paralax_form_2 .paralax_form_2_overlay h2 {
+    font-size: 36px;
+  }
+  .paralax_form_2 .paralax_form_2_black_item h3 {
+    font-size: 26px;
+  }
 }
 @media screen and (max-width: 400px) {
   .header .header_content_item h1 {
@@ -631,5 +730,20 @@ header .header_content_item .header_form h4 span {
   }
   .quest h2 {
     font-size: 35px;
+  }
+  .paralax_form_2 .paralax_form_2_overlay h2 {
+    font-size: 25px;
+  }
+  .paralax_form_2 .paralax_form_2_black_item h3 {
+    font-size: 20px;
+  }
+  .paralax_form_2 .paralax_form_2_black_item .paralax_form_2_black_item_text p span {
+    font-size: 75px;
+  }
+  .paralax_form_2 .paralax_form_2_black_item .paralax_form_2_black_item_text button {
+    padding: 20px;
+  }
+  .footer_text {
+    font-size: 12px;
   }
 }
