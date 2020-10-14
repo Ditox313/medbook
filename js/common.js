@@ -25,6 +25,8 @@ $('.questsion_block').on('click', function(){
 
   new WOW().init();
 
+  // 
+
     $(".fancybox").fancybox({
     	    "imageScale"            : false,
             "zoomOpacity"			: true,
@@ -32,5 +34,7 @@ $('.questsion_block').on('click', function(){
             "zoomSpeedIn"			: 500,
             "zoomSpeedOut"			: 500
     });
+
+    // 
 
   });
