@@ -1,4 +1,9 @@
+$(document).ready(function() {
 "use strict";
+
+$('.questsion_block').on('click', function(){
+  $(this).children('.questsion_block_answer').slideToggle('normal');
+})
 
 
 
@@ -17,11 +22,9 @@
 
 
 // Библиотеки
-$(document).ready(function() {
-  new WOW().init();
-});
 
-$(document).ready(function() {
+  new WOW().init();
+
     $(".fancybox").fancybox({
     	    "imageScale"            : false,
             "zoomOpacity"			: true,
@@ -29,4 +32,5 @@ $(document).ready(function() {
             "zoomSpeedIn"			: 500,
             "zoomSpeedOut"			: 500
     });
-});
+
+  });
