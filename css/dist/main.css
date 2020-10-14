@@ -234,6 +234,65 @@ header .header_content_item .header_form h4 span {
 .advantages .advantages_img img {
   margin-left: 35px;
 }
+.paralax_form_1 {
+  position: relative;
+}
+.paralax_form_1 .paralax_form_1_wrap {
+  background: url('../../img/over_form_bg.png') no-repeat fixed center / cover;
+  min-height: 507px;
+  width: 100%;
+  margin-bottom: 70px;
+  padding: 50px 20px 30px 20px;
+}
+.paralax_form_1 .paralax_form_1_wrap h2 {
+  font-size: 56px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.paralax_form_1 .paralax_form_1_wrap h3 {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+.paralax_form_1 .paralax_form_1_wrap h3 span {
+  color: #0082E5;
+  font-size: 97px;
+}
+.paralax_form_1 .paralax_form_1_wrap h4 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+.paralax_form_1 .paralax_form_1_wrap .paralax_form1 {
+  margin-top: 40px;
+}
+.paralax_form_1 .paralax_form_1_wrap .paralax_form1 fieldset {
+  display: block;
+}
+.paralax_form_1 .paralax_form_1_wrap .paralax_form1 fieldset input {
+  width: 33%;
+  padding: 12px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.paralax_form_1 .paralax_form_1_wrap .paralax_form1 fieldset button {
+  width: 33%;
+  text-transform: uppercase;
+  padding: 12px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #0082E5;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.paralax_form_1 .paralax_form_1_wrap .paralax_form1 fieldset button:hover {
+  background: #0065b2;
+  transition: all 0.5s;
+}
 @media screen and (max-width: 1200px) {
   .header_phone_tel {
     font-size: 17px !important;
@@ -249,6 +308,9 @@ header .header_content_item .header_form h4 span {
   }
   .reesrt h2 {
     font-size: 54px;
+  }
+  .paralax_form_1 .paralax_form_1_wrap h3 {
+    font-size: 34px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -298,10 +360,41 @@ header .header_content_item .header_form h4 span {
   .advantages {
     padding-bottom: 0;
   }
+  .paralax_form_1 .paralax_form_1_wrap h2 {
+    font-size: 48px;
+  }
+  .paralax_form_1 .paralax_form_1_wrap h3 {
+    font-size: 29px;
+  }
+  .paralax_form_1 .paralax_form_1_wrap h3 span {
+    font-size: 70px;
+  }
+  .paralax_form_1 .paralax_form_1_wrap .paralax_form1 fieldset input {
+    width: 32%;
+  }
 }
 @media screen and (max-width: 768px) {
   .advantages h2 {
     font-size: 50px;
+  }
+  .paralax_form_1 .paralax_form_1_wrap h2 {
+    font-size: 38px;
+  }
+  .paralax_form_1 .paralax_form_1_wrap h3 {
+    font-size: 23px;
+  }
+  .paralax_form_1 .paralax_form_1_wrap h3 span {
+    font-size: 39px;
+  }
+  .paralax_form_1 .paralax_form_1_wrap h4 {
+    font-size: 22px;
+  }
+  .paralax_form_1 .paralax_form_1_wrap .paralax_form1 fieldset input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .paralax_form_1 .paralax_form_1_wrap .paralax_form1 fieldset button {
+    width: 100%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -384,5 +477,11 @@ header .header_content_item .header_form h4 span {
   }
   .advantages h2 {
     font-size: 29px;
+  }
+  .paralax_form_1 .paralax_form_1_wrap h3 {
+    font-size: 20px;
+  }
+  .paralax_form_1 .paralax_form_1_wrap h4 {
+    font-size: 16px;
   }
 }
