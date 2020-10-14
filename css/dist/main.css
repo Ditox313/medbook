@@ -25,6 +25,7 @@ body {
 }
 header {
   padding-top: 20px;
+  position: relative;
 }
 header .header_menu {
   font-family: 'PT Sans', sans-serif;
@@ -471,6 +472,14 @@ footer .footer_text {
   text-align: center;
   color: #fff;
 }
+.up_but {
+  font-size: 50px;
+  color: #0082E5;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  cursor: pointer;
+}
 @media screen and (max-width: 1200px) {
   .header_phone_tel {
     font-size: 17px !important;
@@ -689,6 +698,11 @@ footer .footer_text {
   }
   .paralax_form_2 .paralax_form_2_black_item h3 {
     font-size: 26px;
+  }
+  .up_but {
+    bottom: 10px;
+    right: 10px;
+    font-size: 35px;
   }
 }
 @media screen and (max-width: 400px) {
